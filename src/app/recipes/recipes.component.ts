@@ -6,7 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./recipes.component.css'],
 })
 export class RecipesComponent {
+  recipeSelected;
   onRecipePassed(recipeObj) {
-    console.log(recipeObj.name + ' from recipes-component');
+    this.recipeSelected = recipeObj;
+    console.log(this.recipeSelected.name + ' from recipes-component');
   }
 }

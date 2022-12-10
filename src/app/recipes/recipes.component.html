@@ -4,5 +4,10 @@
       (recipeSelected)="onRecipePassed($event)"
     ></app-recipe-list>
   </div>
-  <div class="col-md-7"><app-recipe-detail></app-recipe-detail></div>
+  <div class="col-md-7">
+    <app-recipe-detail
+      [recipeToShow]="recipeSelected"
+      *ngIf="recipeSelected"
+    ></app-recipe-detail>
+  </div>
 </div>
