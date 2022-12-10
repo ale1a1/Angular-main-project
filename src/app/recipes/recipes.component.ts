@@ -5,4 +5,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.css'],
 })
-export class RecipesComponent {}
+export class RecipesComponent {
+  onRecipePassed(recipeObj) {
+    console.log(recipeObj.name + ' from recipes-component');
+  }
+}
